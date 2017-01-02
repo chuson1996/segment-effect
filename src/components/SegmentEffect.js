@@ -49,7 +49,7 @@ export default class SegmentEffect extends Component {
   componentDidMount() {
     this.startAnimation();
     window.addEventListener('mousemove', (e) => {
-      console.log(e.screenX, e.screenY);
+      // console.log(e.screenX, e.screenY);
       const perspectiveOrignX = 100 - Math.floor(e.screenX / window.innerWidth * 100);
       const perspectiveOrignY = 100 - Math.floor(e.screenY / window.innerHeight * 100);
       this.setState(update(this.state, {

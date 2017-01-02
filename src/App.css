@@ -6,6 +6,10 @@ h1 {
   font-size: 3vw;
 }
 
+.segmenter {
+  position: relative;
+}
+
 .segmenter__background,
 .segmenter__piece {
   background-image: url(https://images.unsplash.com/reserve/Ceszw9OoQD6rwMhfDl9R_render0006.jpg?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=);
@@ -39,6 +43,10 @@ h1 {
   color: #2b2b2b;
 }
 
+.segmenter__body h1 {
+  z-index: 2;
+}
+
 .segmenter__body h1 span {
   margin-left: 15px;
 }
@@ -60,10 +68,17 @@ h1 {
 /* ------------- */
 .mouse-circle {
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: rgba(236, 110, 106, .5);
   transform: translate(-50%, -150%);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mouse-circle {
+    display: block;
+  }
 }
