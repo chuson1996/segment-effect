@@ -1,5 +1,7 @@
 # Segment Effect
 
+[Demo](https://build-oxysmecyvx.now.sh)
+
 Inspired by [Filippo Bello's Portfolio](http://www.filippobello.com/portfolio)
 
 Picture from [unsplash.com](https://unsplash.com)
